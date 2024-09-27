@@ -1,3 +1,7 @@
+h3 { text-align: center;
+     color: black;
+
+}
 body{
     background-color:rgb(99, 104, 104);
     display: flex;
@@ -6,6 +10,11 @@ body{
     height: 100vh;
     margin: 0;
 }
+
+.container {
+    display:flex
+}
+
 .calculator {
     background-color:rgb(99, 104, 104);
     max-width: 200px; 
@@ -38,4 +47,28 @@ button {
     background-color: blue;
     border: 1px solid #080606;
     border-radius: 10px;
+}
+
+button:hover{
+    background-color: rgb(231, 66, 45);
+}
+
+.history{
+    margin-left: 200px;
+    background-color: rgb(209, 216, 213);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+table{
+    width: 100%;
+    border-collapse: separate;
+}
+
+th, td {
+    border: 1px solid #8f1e1e;
+    border-radius: 6px;
+    padding: 10px;
+    text-align: justify;
+    color: black;
 }
