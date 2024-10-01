@@ -12,8 +12,8 @@ function evaluateResult() {
     const resultField = document.getElementById('result');
     const result = resultField.value;
     try {
-        const calculatedResult = eval(result);
-        const dateTime = new Date().toLocaleString();
+        const calculatedResult = eval(result).toFixed(2);
+        const dateTime = new Date().toLocaleString();        
         resultField.value = calculatedResult;
         addToHistory(calculatedResult, `Gerado em ${dateTime}`);
     } catch (error) {
